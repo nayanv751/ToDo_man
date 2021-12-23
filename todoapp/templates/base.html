@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from nago.laborasyon.com/demos/layouts/default/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Nov 2021 12:32:57 GMT -->
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nago - Admin & Dashboard HTML Template</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href= "{%static 'media/image/favicon.png"/>
+
+    <!-- Plugin styles -->
+    <link rel="stylesheet" href="{% static 'vendors/bundle.css' %}" type="text/css">
+    
+    {% block css %}
+    {% endblock %}
+    <!-- App styles -->
+    <link rel="stylesheet" href= "{%static 'css/app.min.css' %}" type="text/css">
+</head>
+<body class="form-membership"
+    {% if current_page in form_membership %}
+    form-membership
+    {% endif %}">
+   
+<!-- begin::preloader-->    
+<div class="preloader">
+    <div class="preloader-icon"></div>
+</div>
+
+<!-- end::preloader -->
+     {% block main_content %}
+     {% endblock %}
+
+<!-- Plugin scripts -->
+<script src="{% static 'vendors/bundle.js' %}"></script>
+
+<!-- App scripts -->
+<script src="{% static 'js/app.min.js' %}"></script>
+</body>
+
+{% block scripts %}
+{% endblock %}
+
+<!-- Mirrored from nago.laborasyon.com/demos/layouts/default/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Nov 2021 12:32:57 GMT -->
+</html>
